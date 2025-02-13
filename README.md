@@ -15,12 +15,12 @@ composer require php-client/openai
 ```php
 use PhpClient\OpenAI\OpenAI;
 
-$syncthing = new OpenAI(
+$openai = new OpenAI(
     baseUrl: 'https://api.openai.com',
     token: 'YOUR_API_TOKEN',
 );
 
-$response = $syncthing->api->chat()->createChatCompletion(
+$response = $openai->api->chat()->createChatCompletion(
     model: 'gpt-4o',
     messages: [
         ['role' => 'user', 'content' => 'Hello'],
