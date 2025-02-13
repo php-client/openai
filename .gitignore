@@ -1,0 +1,5 @@
+/vendor/
+/references/
+/debug/
+/.env
+composer.lock
